@@ -1,0 +1,5 @@
+# Azure App Service deployment reference
+# Build command: pip install -r backend/requirements.txt
+# Startup command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+# Set application settings in Azure:
+# DATABASE_URL, JWT_SECRET, CORS_ORIGINS, NEWS_RSS_URLS

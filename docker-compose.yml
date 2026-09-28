@@ -1,0 +1,12 @@
+services:
+  selenite-api:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:///./selenite.db
+      JWT_SECRET: change-this-before-production
+    volumes:
+      - selenite-data:/app
+volumes:
+  selenite-data:
